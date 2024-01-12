@@ -17,3 +17,12 @@ function deleteTown() {
 	else
 		$('#result').text(townName + " not found.");
 }
+
+function showMessage(msg) {
+	let resultElement = document.getElementById("result");
+	resultElement.textContent = msg;
+	resultElement.style.display = "block";
+	setTimeout(function () {
+	resultElement.style.display = "none";
+	}, 3000);
+}
